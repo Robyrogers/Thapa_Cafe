@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ThapaCafe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <img src="images/logo.png" class="logo">
+                
+                <div class="mobile-icon" ><i class="fas fa-bars mobile-icon" onclick="slideShow()"></i></div>
+
+                <ul class="main-nav animated slideInDown" id="main-nav">
+                    <li><a href="#">CAKE DELIVERY</a></li>
+                    <li><a href="#">HOW TO ORDER</a></li>
+                    <li><a href="#">CHECK MORE</a></li>
+                    <li><a href="#">SIGN UP</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="main-content-header">
+            <h1> WELCOME TO <span class="colorchange">THAPA CAFE</span>.<br>
+            HOUSE OF CAKE LOVER OO YES!
+            </h1>
+        
+            <a href="#" class="btn btn-order">click to order</a>
+            <a href="#" class="btn btn-more">show me more</a>
+        </div>
+    </header>
+    
+    <script type="text/javascript">
+        
+        function slideShow(){
+            var x = document.getElementById('main-nav');
+            if(x.style.display === 'none'){
+                x.style.display = 'block';
+            }else{
+                x.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
